@@ -1,0 +1,24 @@
+_id: req_wrk_e7c17af8f1f141f4b741730fcff08279d3d272cb
+type: Request
+parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279b0dd615c
+modified: 1648711286070
+created: 1648711286070
+url: "{{ base_url }}/v1/contacts/{{ contact }}"
+name: Retrieves a contact.
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Authorization
+    disabled: true
+    value: string
+authentication: {}
+metaSortKey: -1648711286070
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

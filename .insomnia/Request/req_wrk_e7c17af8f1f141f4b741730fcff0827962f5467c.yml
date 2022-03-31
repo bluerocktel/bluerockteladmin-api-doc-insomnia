@@ -1,0 +1,32 @@
+_id: req_wrk_e7c17af8f1f141f4b741730fcff0827962f5467c
+type: Request
+parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279035eae60
+modified: 1648711286067
+created: 1648711286067
+url: "{{ base_url }}/v1/customers/{{ customer }}"
+name: Update a customer.
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "firstName": "string",
+      "lastName": "string"
+    }
+parameters: []
+headers:
+  - name: Authorization
+    disabled: true
+    value: string
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1648711286067
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

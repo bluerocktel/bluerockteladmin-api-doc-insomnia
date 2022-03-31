@@ -1,0 +1,30 @@
+_id: req_wrk_e7c17af8f1f141f4b741730fcff082790bcd181a
+type: Request
+parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279687c8286
+modified: 1648711286066
+created: 1648711286066
+url: "{{ base_url }}/v1/documents"
+name: Returns documents.
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: documentable_type
+    disabled: true
+    value: string
+  - name: ducumentable_id
+    disabled: true
+    value: "0"
+headers:
+  - name: Authorization
+    disabled: true
+    value: string
+authentication: {}
+metaSortKey: -1648711286066
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

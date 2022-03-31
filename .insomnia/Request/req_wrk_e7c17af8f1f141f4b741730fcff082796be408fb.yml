@@ -1,0 +1,32 @@
+_id: req_wrk_e7c17af8f1f141f4b741730fcff082796be408fb
+type: Request
+parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279687c8286
+modified: 1648711286065
+created: 1648711286065
+url: "{{ base_url }}/v1/documents"
+name: Store a new document.
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "lastName": "string",
+      "firstName": "string"
+    }
+parameters: []
+headers:
+  - name: Authorization
+    disabled: true
+    value: string
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1648711286065
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

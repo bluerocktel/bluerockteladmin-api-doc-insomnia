@@ -1,0 +1,32 @@
+_id: req_wrk_e7c17af8f1f141f4b741730fcff0827989f1fe4c
+type: Request
+parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279b0dd615c
+modified: 1648711286070
+created: 1648711286070
+url: "{{ base_url }}/v1/contacts/{{ contact }}"
+name: Update a contact.
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "firstName": "string",
+      "lastName": "string"
+    }
+parameters: []
+headers:
+  - name: Authorization
+    disabled: true
+    value: string
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1648711286070
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
