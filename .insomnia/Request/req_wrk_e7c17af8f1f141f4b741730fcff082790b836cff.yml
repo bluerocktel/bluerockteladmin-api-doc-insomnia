@@ -1,7 +1,7 @@
 _id: req_wrk_e7c17af8f1f141f4b741730fcff082790b836cff
 type: Request
 parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279b0dd615c
-modified: 1648711286069
+modified: 1648715547674
 created: 1648711286069
 url: "{{ base_url }}/v1/contacts/{{ contact }}"
 name: Delete a contact.
@@ -13,7 +13,11 @@ headers:
   - name: Authorization
     disabled: true
     value: string
-authentication: {}
+    id: pair_f309a1e0bc5c48c3b0d1563e169e1442
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  prefix: Bearer
 metaSortKey: -1648711286069
 isPrivate: false
 settingStoreCookies: true

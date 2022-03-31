@@ -1,24 +1,24 @@
-_id: req_wrk_e7c17af8f1f141f4b741730fcff08279f50d4e67
+_id: req_wrk_e7c17af8f1f141f4b741730fcff08279e308b6c1
 type: Request
-parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279b0dd615c
-modified: 1648715564650
-created: 1648711286069
-url: "{{ base_url }}/v1/contacts/numbers"
-name: Retrieves a contact by phone number.
+parentId: fld_wrk_e7c17af8f1f141f4b741730fcff082797321fc00
+modified: 1648713019353
+created: 1648712920662
+url: "{{ base_url }}/v1/bank-details/{{ bank-detail }}"
+name: Delete bank details.
 description: ""
-method: GET
+method: DELETE
 body: {}
 parameters: []
 headers:
   - name: Authorization
     disabled: true
     value: string
-    id: pair_b12f34a886f74197b4f9d694d7e57839
+    id: pair_506a1615323e422bb2454be760390126
 authentication:
   type: bearer
   token: "{{ _.token }}"
   prefix: Bearer
-metaSortKey: -1648711286069
+metaSortKey: -1648712920662
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

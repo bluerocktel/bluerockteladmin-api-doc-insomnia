@@ -1,7 +1,7 @@
 _id: req_wrk_e7c17af8f1f141f4b741730fcff082790bcd181a
 type: Request
 parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279687c8286
-modified: 1648711286066
+modified: 1648713152878
 created: 1648711286066
 url: "{{ base_url }}/v1/documents"
 name: Returns documents.
@@ -12,14 +12,20 @@ parameters:
   - name: documentable_type
     disabled: true
     value: string
+    id: pair_1a7f582a445643bcb2525b26777f69a0
   - name: ducumentable_id
     disabled: true
     value: "0"
+    id: pair_2b1ae6cc397d4e248fea04a24c2bd4e7
 headers:
   - name: Authorization
     disabled: true
     value: string
-authentication: {}
+    id: pair_50678246223643f1a315d76b4cbb5d3d
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  prefix: Bearer
 metaSortKey: -1648711286066
 isPrivate: false
 settingStoreCookies: true

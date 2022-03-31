@@ -1,7 +1,7 @@
 _id: req_wrk_e7c17af8f1f141f4b741730fcff08279d6f68c4e
 type: Request
 parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279b0dd615c
-modified: 1648711286071
+modified: 1648713759295
 created: 1648711286071
 url: "{{ base_url }}/v1/contacts"
 name: Returns contacts.
@@ -10,16 +10,22 @@ method: GET
 body: {}
 parameters:
   - name: contactable_type
-    disabled: true
+    disabled: false
     value: string
+    id: pair_92df1ca8019142a7a452d531f387c0d4
   - name: contactable_id
-    disabled: true
+    disabled: false
     value: "0"
+    id: pair_4844b19130c24b3197003a5ce39483ab
 headers:
   - name: Authorization
     disabled: true
     value: string
-authentication: {}
+    id: pair_a6b2889f42c447bb82f356b2929b87e7
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  prefix: Bearer
 metaSortKey: -1648711286071
 isPrivate: false
 settingStoreCookies: true

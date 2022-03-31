@@ -1,7 +1,7 @@
 _id: req_wrk_e7c17af8f1f141f4b741730fcff08279e8e0d9c7
 type: Request
 parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279b0dd615c
-modified: 1648711286069
+modified: 1648715566470
 created: 1648711286069
 url: "{{ base_url }}/v1/contacts/{{ contact }}/coworkers"
 name: Returns coworkers.
@@ -13,7 +13,11 @@ headers:
   - name: Authorization
     disabled: true
     value: string
-authentication: {}
+    id: pair_a144a4288d844fbabcdc8a4a7393f15a
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  prefix: Bearer
 metaSortKey: -1648711286069
 isPrivate: false
 settingStoreCookies: true

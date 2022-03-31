@@ -1,10 +1,10 @@
-_id: req_wrk_e7c17af8f1f141f4b741730fcff08279e1541e2f
+_id: req_wrk_e7c17af8f1f141f4b741730fcff08279f5245559
 type: Request
-parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279687c8286
-modified: 1648713171074
-created: 1648711286065
-url: "{{ base_url }}/v1/documents/{{ document }}"
-name: Update a document.
+parentId: fld_wrk_e7c17af8f1f141f4b741730fcff082797321fc00
+modified: 1648713311634
+created: 1648712920662
+url: "{{ base_url }}/v1/bank-details/{{ bank-detail }}"
+name: Update the bank details.
 description: ""
 method: PUT
 body:
@@ -19,15 +19,15 @@ headers:
   - name: Authorization
     disabled: true
     value: string
-    id: pair_b9343d0ff13641fbbb9a94e55aabab28
+    id: pair_8ec0267cd38448e08e206a07f4c0e40d
   - name: Content-Type
     value: application/json
-    id: pair_fc9f78ce2f8e4b529a982028bc6b7088
+    id: pair_89e862a609284fbd887a1080ae7609dd
 authentication:
   type: bearer
   token: "{{ _.token }}"
   prefix: Bearer
-metaSortKey: -1648711286065
+metaSortKey: -1648712920662
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

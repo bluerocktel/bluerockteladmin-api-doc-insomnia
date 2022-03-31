@@ -1,7 +1,7 @@
 _id: req_wrk_e7c17af8f1f141f4b741730fcff08279c7540c4b
 type: Request
 parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279035eae60
-modified: 1648711286068
+modified: 1648713243201
 created: 1648711286068
 url: "{{ base_url }}/v1/customers"
 name: Returns customers.
@@ -12,11 +12,16 @@ parameters:
   - name: page
     disabled: true
     value: "0"
+    id: pair_a166987ea346493a9d2487914bfbdf8b
 headers:
   - name: Authorization
     disabled: true
     value: string
-authentication: {}
+    id: pair_6f1748c6fbc748dba5fc117320765181
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  prefix: Bearer
 metaSortKey: -1648711286068
 isPrivate: false
 settingStoreCookies: true

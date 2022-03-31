@@ -1,7 +1,7 @@
 _id: req_wrk_e7c17af8f1f141f4b741730fcff0827911c2ee67
 type: Request
 parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279035eae60
-modified: 1648711286066
+modified: 1648713309184
 created: 1648711286066
 url: "{{ base_url }}/v1/customers/{{ customer }}"
 name: Delete a customer
@@ -13,7 +13,11 @@ headers:
   - name: Authorization
     disabled: true
     value: string
-authentication: {}
+    id: pair_c9957b2f18624255b51fcd83c5874b98
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  prefix: Bearer
 metaSortKey: -1648711286066
 isPrivate: false
 settingStoreCookies: true

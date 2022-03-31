@@ -1,7 +1,7 @@
 _id: req_wrk_e7c17af8f1f141f4b741730fcff08279a7490597
 type: Request
 parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279b0dd615c
-modified: 1648711286071
+modified: 1648715562038
 created: 1648711286071
 url: "{{ base_url }}/v1/contacts"
 name: Store a new contact.
@@ -14,14 +14,27 @@ body:
       "lastName": "string",
       "firstName": "string"
     }
-parameters: []
+parameters:
+  - name: contactable_type
+    disabled: false
+    value: string
+    id: pair_00031fe1fc6e45cf9eb2f7b3acf4db8c
+  - name: contactable_id
+    disabled: false
+    value: "0"
+    id: pair_98af0aa9c9754ad9aafa07c3785dcb60
 headers:
   - name: Authorization
     disabled: true
     value: string
+    id: pair_7a880f18d31948dc8f70338e7492a308
   - name: Content-Type
     value: application/json
-authentication: {}
+    id: pair_790206bb741d481b97d202260bbe5d4d
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  prefix: Bearer
 metaSortKey: -1648711286071
 isPrivate: false
 settingStoreCookies: true

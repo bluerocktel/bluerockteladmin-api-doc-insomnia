@@ -1,7 +1,7 @@
 _id: req_wrk_e7c17af8f1f141f4b741730fcff08279d3d272cb
 type: Request
 parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279b0dd615c
-modified: 1648711286070
+modified: 1648715558802
 created: 1648711286070
 url: "{{ base_url }}/v1/contacts/{{ contact }}"
 name: Retrieves a contact.
@@ -13,7 +13,11 @@ headers:
   - name: Authorization
     disabled: true
     value: string
-authentication: {}
+    id: pair_59f42d4a75874c4eb952481d50548174
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  prefix: Bearer
 metaSortKey: -1648711286070
 isPrivate: false
 settingStoreCookies: true

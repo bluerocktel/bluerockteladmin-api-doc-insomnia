@@ -1,7 +1,7 @@
 _id: req_wrk_e7c17af8f1f141f4b741730fcff08279c0acbe83
 type: Request
 parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279687c8286
-modified: 1648711286064
+modified: 1648713213752
 created: 1648711286064
 url: "{{ base_url }}/v1/documents/{{ document }}"
 name: Delete a document.
@@ -13,7 +13,11 @@ headers:
   - name: Authorization
     disabled: true
     value: string
-authentication: {}
+    id: pair_1244c2ead59b4a25b09e3042489effa3
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  prefix: Bearer
 metaSortKey: -1648711286064
 isPrivate: false
 settingStoreCookies: true

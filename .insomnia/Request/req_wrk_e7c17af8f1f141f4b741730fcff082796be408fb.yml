@@ -1,7 +1,7 @@
 _id: req_wrk_e7c17af8f1f141f4b741730fcff082796be408fb
 type: Request
 parentId: fld_wrk_e7c17af8f1f141f4b741730fcff08279687c8286
-modified: 1648711286065
+modified: 1648713200234
 created: 1648711286065
 url: "{{ base_url }}/v1/documents"
 name: Store a new document.
@@ -19,9 +19,14 @@ headers:
   - name: Authorization
     disabled: true
     value: string
+    id: pair_f76716109aed4ed19e956ff6f96961d3
   - name: Content-Type
     value: application/json
-authentication: {}
+    id: pair_963d895fc0054aa18f5358191fd5547a
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  prefix: Bearer
 metaSortKey: -1648711286065
 isPrivate: false
 settingStoreCookies: true

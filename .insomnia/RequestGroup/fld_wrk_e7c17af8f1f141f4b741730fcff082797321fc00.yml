@@ -1,0 +1,10 @@
+_id: fld_wrk_e7c17af8f1f141f4b741730fcff082797321fc00
+type: RequestGroup
+parentId: wrk_e7c17af8f1f141f4b741730fcff08279
+modified: 1648712920665
+created: 1648712920665
+name: BankDetails
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1648712920665

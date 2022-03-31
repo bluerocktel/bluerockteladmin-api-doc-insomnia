@@ -1,16 +1,21 @@
 _id: env_env_73100a4062089ad9c27a78a3b370e1d92cdd2764_sub
 type: Environment
 parentId: env_73100a4062089ad9c27a78a3b370e1d92cdd2764
-modified: 1648711499726
+modified: 1648712025655
 created: 1648711286073
 name: BlueRockTEL Demo
 data:
+  scheme: https
+  base_path: ""
+  host: telecom0558-admin.bluerocktel.net
   base_url: https://telecom0558-admin.bluerocktel.net/api
   email: demo@bluerocktel.com
   password: secret
   token: "{% response 'body', 'req_2d1d5ebd7bed45daa779e8a88c420e5b',
     'b64::JC50b2tlbg==::46b', 'always', 60 %}"
   contact: 1
+  customer: 1
+  document: 1
 dataPropertyOrder:
   "&":
     - base_url
@@ -18,6 +23,8 @@ dataPropertyOrder:
     - password
     - token
     - contact
+    - customer
+    - document
 color: null
 isPrivate: false
 metaSortKey: 1648711286073
