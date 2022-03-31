@@ -1,7 +1,7 @@
 _id: spc_3c76718d833d4a3b8bed08d6cd6d05dd
 type: ApiSpec
 parentId: wrk_e7c17af8f1f141f4b741730fcff08279
-modified: 1648717578748
+modified: 1648723035480
 created: 1648711239834
 fileName: bluerockteladmin-api-doc-insomnia.yaml
 contents: >+
@@ -247,18 +247,24 @@ contents: >+
             description: not found
     # path
     /v1/contacts/{contact}/coworkers:
+      # parameters for the path
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: Authorization
+          description: Bearer
+        - schema:
+            type: string
+          name: contact
+          in: path
+          required: true
       get:
         summary: Returns coworkers.
         description : Retrieves the coworkers of the specified contact.
         operationId: get-contacts-contact-coworkers
         tags:
           - Contacts
-        parameters:
-          - schema:
-              type: string
-            in: header
-            name: Authorization
-            description: Bearer
         responses:
           '200':
             description: OK
@@ -271,25 +277,26 @@ contents: >+
                   uniqueItems: true
                   items:
                     type: object
+    # path
+    /v1/contacts/numbers:
+      # parameters for the path
       parameters:
         - schema:
             type: string
-          name: contact
-          in: path
+          in: header
+          name: Authorization
+          description: Bearer
+        - schema:
+            type: string
+          name: phoneNumber
+          in: query
           required: true
-    /v1/contacts/numbers:
       get:
         summary: Retrieves a contact by phone number.
         description : Retrieves a contact by phone number.
         operationId: get-contacts-numbers
         tags:
           - Contacts
-        parameters:
-          - schema:
-              type: string
-            in: header
-            name: Authorization
-            description: Bearer
         responses:
           '200':
             description: OK
@@ -302,12 +309,6 @@ contents: >+
                   uniqueItems: true
                   items:
                     type: object
-      parameters:
-        - schema:
-            type: string
-          name: phoneNumber
-          in: query
-          required: true
     /v1/customers:
       get:
         summary: Returns customers.

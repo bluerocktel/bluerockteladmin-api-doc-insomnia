@@ -1,7 +1,7 @@
 _id: req_wrk_e7c17af8f1f141f4b741730fcff082797586fc4c
 type: Request
 parentId: fld_wrk_e7c17af8f1f141f4b741730fcff082797321fc00
-modified: 1648713020466
+modified: 1648723041984
 created: 1648712920662
 url: "{{ base_url }}/v1/bank-details/{{ bank-detail }}"
 name: Retrieves the bank details.
